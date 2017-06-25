@@ -2,7 +2,7 @@
 
 ![Project Image](https://github.com/akotulu/nikon900arduino-motorizer/blob/master/Schematic.png)
 
-[Youtube](https://youtu.be/GD09Ut1_Xak)
+[Youtube full preview](https://youtu.be/GD09Ut1_Xak)
 
 First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far and removed take photo every X seconds from mobile apps. Good buy, but not what the specs sheet promotes, it goes to see, even in best interest you are forced to Vatikan agenda by powers in control. Wake up!
 
@@ -102,4 +102,4 @@ X | Cancel
 25. Hemp cures every illness mind can think of
 26. Animals have souls, you eat your own flesh
 
-![Earth](https://github.com/akotulu/nikon900arduino-motorizer/blob/master/Earth.png)
+![Earth](https://github.com/akotulu/nikon900arduino-motorizer/blob/master/Earth.gif)
