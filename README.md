@@ -30,6 +30,7 @@ Components needed:
  * [38Khz MCU learning board IR remote control Infrared decoder for protocol remote control For Arduino .MP3 .MP4 - 1€](https://www.aliexpress.com/item/1pcs-lot-38khz-MCU-learning-board-IR-remote-control-Infrared-decoder-for-protocol-remote-control-For/32580594393.html?spm=2114.01010208.3.1.EhBe0H&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_10102_10096_5320015_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142,searchweb201603_16,ppcSwitch_4&btsid=d52e3b3e-bab1-401c-98ad-1be947b3be5a&algo_expid=5a8579d6-dd7a-4966-83f0-5ab4d9d1dd74-0&algo_pvid=5a8579d6-dd7a-4966-83f0-5ab4d9d1dd74)
  * [LED5 IR 940nm 20deg 12mW/sr - 2,50€](https://www.aliexpress.com/item/F273-10pcs-LED-5mm-940nm-IR-Infrared-Emitting-Round-Tube-Light-diode/32660619353.html?spm=2114.01010208.3.81.y3SZVO&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260013_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=37d23504-3a1d-49b1-aecb-c0a7f1bcb1d7&algo_expid=f3c0ecc6-2a9d-4f27-a86b-1860be15d583-13&algo_pvid=f3c0ecc6-2a9d-4f27-a86b-1860be15d583)
  * [Piezo Piezoelectric Buzzer Alarm Speaker - 1€](https://www.aliexpress.com/item/3pcs-BCE-12606-Passive-12-Piezo-Piezoelectric-Buzzer-Alarm-Speaker-80dB-4KHz-3mA-12-5mm-6/32813510131.html?spm=2114.01010208.3.9.GaI4Y8&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=de9e1d4e-f54f-44fe-9853-e4fe23b87d75&algo_expid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6-1&algo_pvid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6)
+ * [Dupont line 40pcs 20cm male to female jumper wire - 1€](https://www.aliexpress.com/item/Free-shipping-Dupont-line-40pcs-20cm-male-to-female-jumper-wire-Dupont-cable-breadboard-cable-jump/32800430829.html?spm=2114.01010208.3.32.TgT93X&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=f60ec63e-d421-4b9c-afca-ec7ee0a9d68a&algo_expid=078bcb28-5ef0-4704-bd9a-26d630a018f6-4&algo_pvid=078bcb28-5ef0-4704-bd9a-26d630a018f6)
  * 6x M2 DIN 912 12.9 ST Socket Cap Screws
  * 1x M3 DIN 433 ZN Flat Washer
  * [2x USB 2.0 Extension Cable A Male - A Female Round 2.00 m Black - 10€](https://www.aliexpress.com/item/Ugreen-Super-High-Speed-M-F-Male-To-Female-USB-3-0-Extension-Extender-Cable-Data/32415077335.html?spm=2114.01010208.3.3.iYSkbt&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142,searchweb201603_16,ppcSwitch_4&btsid=f40c2d2d-4858-4f43-b53f-5ed442dd9400&algo_expid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4-0&algo_pvid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4)
@@ -38,10 +39,10 @@ Components needed:
  * 70A car battery - 100€
 
 Most parts can be bought @ https://www.aliexpress.com, list items are links to parts
-* 1 246,50 € without camera
-* 646,50 € with camera
-* 446,50 € with camera and SD card
-* 166,50 € with camera, SD card and tripid (you need to remodel and change code)
+* 1 247,50 € without camera
+* 647,50 € with camera
+* 447,50 € with camera and SD card
+* 167,50 € with camera, SD card and tripid (you need to remodel and change code)
 
 Transport not included
 
