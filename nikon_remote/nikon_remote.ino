@@ -34,12 +34,16 @@
 #define TRACE(x)
 #endif /* xDEBUG */
 
+//active program loop, every program must set it when appropriate
+void fn_null(){}
+void (*loop_ptr)()=&fn_null;
+
 //step motor revolution
 #define REVStep 200
 #define STEPSpeed 60
 
 //initialize stepper library on pins 12 through 9
-Stepper stepper(REVStep, 12, 11, 10, 9);
+Stepper stepper(REVStep, 9, 11, 10, 12);
 
 //speaker
 #define TONEPin 5
@@ -85,28 +89,52 @@ void snap()
   TRACE("snap");
 }
 
-//program - testmotor
-int no_turn = 0;
-void setup_testmotor()
+//program - RUNMOTOR
+int no_turn=0;
+int direction=1;
+void setup_RUNMOTOR()
 {
   stepper.setSpeed(60);
   no_turn=0;
-  TRACE("STEPSpeed: " + 60);
-  TRACE("STEPS: " + 400);
+  loop_ptr=&fn_null;
+  TRACE("STEPSpeed: "+60);
+  TRACE("STEPS: "+400);
 }
 
-void terminate_testmotor()
+int irhandle_RUNMOTOR(unsigned long value)
 {
+  switch(value)
+  {
+  case 0xFF22DD:
+    TRACE("PREV-backwards");
+    direction=-1;
+    NewTone(TONEPin, 234, 100);
+    break;
+  case 0xFF02FD:
+    TRACE("NEXT-forward");
+    direction=+1;
+    NewTone(TONEPin, 432, 100);
+    break;
+  default:
+    return 0;
+  }
+  loop_ptr=&program_RUNMOTOR;
+  return 1;
 }
 
-void program_testmotor()
+void terminate_RUNMOTOR()
 {
-  stepper.step(400);
-  TRACE(++no_turn);
+  loop_ptr=&fn_null;
+}
+
+void program_RUNMOTOR()
+{
+  stepper.step(400*direction);
+  TRACE(no_turn=no_turn+direction);
 }
 //end program
 
-//
+
 //program - 360 24h time lapse
 //400*113=45200 steps*turns -> total revolutions
 //24*3600=86400 hours*seconds -> seconds in 24h
@@ -117,6 +145,7 @@ int rev_360_24=0;
 int shts_tkn=0;
 void setup_360_24timelapse()
 {
+  loop_ptr=&program_360_24timelapse;
   stepper.setSpeed(STEPSpeed);
   rev_360_24=REV_360_24/(86400/(DELAY/1000));
   shot_millis=0;
@@ -129,6 +158,7 @@ void setup_360_24timelapse()
 
 void terminate_360_24timelapse()
 {
+  loop_ptr=&fn_null;
 }
 
 void program_360_24timelapse()
@@ -145,80 +175,90 @@ void program_360_24timelapse()
 //end program
 
 //programs
-enum program {
+enum program{
   SLEEP, //default
-  TESTMOTOR, 
+  RUNMOTOR,
   TIMELAPSE360_24
 };
 
-//programs map keys
-enum map_keys {
-  SETUP,
-  LOOP,
-  TERMINATE,
-  TONE
+//program definition
+struct program_def{
+  void (*setup)();
+  int (*irhandle)(unsigned long value);
+  void (*terminate)();
+  int tone;
 };
 
 //defined programs map
-void fn_null(){}
-static void (*programs[][4])()={
-//setup                     loop                        terminate                     tone
-  {fn_null,                 fn_null,                    fn_null,                      (void (*)())330}, // why so many warining checks, learn plain JS      
-  {setup_testmotor,         program_testmotor,          terminate_testmotor,          (void (*)())123}, // and understand the freedom
-  {setup_360_24timelapse,   program_360_24timelapse,    terminate_360_24timelapse,    (void (*)())777}, // of thought
+program_def programs[]={
+  {.setup=fn_null, .irhandle=NULL, .terminate=fn_null, .tone=330},
+  {.setup=setup_RUNMOTOR, .irhandle=irhandle_RUNMOTOR, .terminate=terminate_RUNMOTOR, .tone=123},
+  {.setup=setup_360_24timelapse, .irhandle=NULL, .terminate=terminate_360_24timelapse, .tone=777},
 };
+
 //active program
 program cur_program=SLEEP;
-//active program loop
-void (*loop_ptr)()=&fn_null;
 
 // takes action based on IR code received
 void translateIR(unsigned long value) 
 {
-  programs[cur_program][TERMINATE]();
-  cur_program=SLEEP;
+  program_def program=programs[cur_program];
   
+  if (program.irhandle!=NULL && program.irhandle(value)) return;
+
   switch(value)
   {
   case 0xFFA25D:
     TRACE("CH-");
+    cur_program=SLEEP;
     break;
   case 0xFF629D:
     TRACE("CH");
+    cur_program=SLEEP;
     break;
   case 0xFFE21D:
     TRACE("CH+");
+    cur_program=SLEEP;
     break;
   case 0xFF22DD:
     TRACE("PREV");
+    cur_program=SLEEP;
     break;
   case 0xFF02FD:
     TRACE("NEXT");
+    cur_program=SLEEP;
     break;
   case 0xFFC23D:
     TRACE("PLAY/PAUSE");
+    cur_program=SLEEP;
     break;
   case 0xFFE01F:
     TRACE("VOL-");
+    cur_program=SLEEP;
     break;
   case 0xFFA857:
     TRACE("VOL+");
+    cur_program=SLEEP;
     break;
   case 0xFF906F:
     TRACE("EQ");
+    cur_program=SLEEP;
     break;
   case 0xFF6897:
     TRACE("0");
+    cur_program=SLEEP;
     break;
   case 0xFF9867:
     TRACE("100+");
+    cur_program=SLEEP;
     break;
   case 0xFFB04F:
     TRACE("200+");
+    cur_program=SLEEP;
     break;
   case 0xFF30CF:
-    TRACE("1-test motor");
-    cur_program=TESTMOTOR;
+    TRACE("1-run motor");
+    cur_program=RUNMOTOR;
     break;
   case 0xFF18E7:
     TRACE("2-360 24h time lapse");
@@ -226,33 +266,42 @@ void translateIR(unsigned long value)
     break;
   case 0xFF7A85:
     TRACE("3");
+    cur_program=SLEEP;
     break;
   case 0xFF10EF:
     TRACE("4");
+    cur_program=SLEEP;
     break;
   case 0xFF38C7:
     TRACE("5");
+    cur_program=SLEEP;
     break;
   case 0xFF5AA5:
     TRACE("6");
+    cur_program=SLEEP;
     break;
   case 0xFF42BD:
     TRACE("7");
+    cur_program=SLEEP;
     break;
   case 0xFF4AB5:
     TRACE("8");
+    cur_program=SLEEP;
     break;
   case 0xFF52AD:
     TRACE("9");
+    cur_program=SLEEP;
     break;
   default:
     TRACE("other button");
+    return; //remote sends other button randomly, need to ignore
   }
-  void (**program)()=programs[cur_program];
-  program[SETUP]();
-  loop_ptr=program[LOOP];
-  NewTone(TONEPin, (int)program[TONE], 100);
-  delay(100);
+  NewTone(TONEPin, program.tone, 100);
+    
+  program.terminate();
+  program=programs[cur_program];
+  program.setup();
+  delay(1000);
 }
    
 void setup() 

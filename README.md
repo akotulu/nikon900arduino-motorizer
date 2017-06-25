@@ -32,7 +32,7 @@ Components needed:
  * [Piezo Piezoelectric Buzzer Alarm Speaker - 1€](https://www.aliexpress.com/item/3pcs-BCE-12606-Passive-12-Piezo-Piezoelectric-Buzzer-Alarm-Speaker-80dB-4KHz-3mA-12-5mm-6/32813510131.html?spm=2114.01010208.3.9.GaI4Y8&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=de9e1d4e-f54f-44fe-9853-e4fe23b87d75&algo_expid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6-1&algo_pvid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6)
  * [Dupont line 40pcs 20cm male to female jumper wire - 1€](https://www.aliexpress.com/item/Free-shipping-Dupont-line-40pcs-20cm-male-to-female-jumper-wire-Dupont-cable-breadboard-cable-jump/32800430829.html?spm=2114.01010208.3.32.TgT93X&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=f60ec63e-d421-4b9c-afca-ec7ee0a9d68a&algo_expid=078bcb28-5ef0-4704-bd9a-26d630a018f6-4&algo_pvid=078bcb28-5ef0-4704-bd9a-26d630a018f6)
  * 6x M2 DIN 912 12.9 ST Socket Cap Screws
- * 1x M3 DIN 433 ZN Flat Washer
+ * 4x M3 DIN 433 ZN Flat Washer
  * [2x USB 2.0 Extension Cable A Male - A Female Round 2.00 m Black - 10€](https://www.aliexpress.com/item/Ugreen-Super-High-Speed-M-F-Male-To-Female-USB-3-0-Extension-Extender-Cable-Data/32415077335.html?spm=2114.01010208.3.3.iYSkbt&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142,searchweb201603_16,ppcSwitch_4&btsid=f40c2d2d-4858-4f43-b53f-5ed442dd9400&algo_expid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4-0&algo_pvid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4)
  * Unused Male USB cable to make your own power plug
  * [200W Auto Car/Home Inverter Converter Adapter 12V To 220V Charger Two USB With Alligator Clips Cable - 19€](https://www.aliexpress.com/item/New-200W-Auto-Car-Home-Inverter-Converter-Adapter-12V-To-220V-110V-Charger-Two-USB-With/32741342488.html?spm=2114.01010208.3.1.ikm2Yw&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142-10102_10119,searchweb201603_16,ppcSwitch_4&btsid=09b2109c-b9ca-4830-ba82-12eecf2d3fad&algo_expid=1e5bf778-75f5-4ade-aa17-e2a4e59b1c86-0&algo_pvid=1e5bf778-75f5-4ade-aa17-e2a4e59b1c86)
@@ -63,12 +63,18 @@ Use the *TEST.gcode* to validate everything fits, and clean the gears from print
 
 There are companies who 3D print your STL files
 
+### Programs
+
+* Rhinoceors - 3D model
+* 123Desing - Convert svg to stl
+* Photoshop - Magic Wand tool
 
 ## Commands
 
 Button | Command
 ------------ | -------------
-1 | Test motor
+1+NEXT | Motor forwards
+1+PREV | Motor backwards
 2 | 24h time lapse
 X | Cancel
 
