@@ -57,7 +57,7 @@ Transport not included
 
 Witbox 2 comes without heat bed, which makes it 'cheaper,' you need to use masking tape otherwise wont stick.
 
-Use the *TEST.gcode* to validate everything fits, and clean the gears from printing overhead
+Use the *TEST.gcode* to validate everything fits
 
 #### No printer
 
@@ -68,6 +68,13 @@ There are companies who 3D print your STL files
 * Rhinoceors - 3D model
 * 123Desing - Convert svg to stl
 * Photoshop - Magic Wand tool
+
+### Pitfails
+
+* Motor is weak when speed is increased
+* Clean the gears from printing overhead with sandpaper
+* Use extra washers to level motor
+* Transfer gear has 1mm cap, use cardboard to make a spring
 
 ## Commands
 

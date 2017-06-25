@@ -29,9 +29,11 @@
 #define xDEBUG
 
 #ifdef xDEBUG
-#define TRACE(x) Serial.println(x)
+#define TRACE1(x) Serial.println(x)
+#define TRACE2(x,y) Serial.print(x); Serial.println(y)
 #else
-#define TRACE(x)
+#define TRACE1(x)
+#define TRACE2(x,y)
 #endif /* xDEBUG */
 
 //active program loop, every program must set it when appropriate
@@ -40,7 +42,7 @@ void (*loop_ptr)()=&fn_null;
 
 //step motor revolution
 #define REVStep 200
-#define STEPSpeed 60
+#define STEPSpeed 30
 
 //initialize stepper library on pins 12 through 9
 Stepper stepper(REVStep, 9, 11, 10, 12);
@@ -86,19 +88,19 @@ void snap()
     oscillate(LEDPin, sequence[i], i%2==0);
   }
   digitalWrite(LEDPin,  0);
-  TRACE("snap");
+  TRACE1("snap");
 }
 
 //program - RUNMOTOR
 int no_turn=0;
 int direction=1;
 void setup_RUNMOTOR()
-{
-  stepper.setSpeed(60);
+{ 
+  stepper.setSpeed(30);
   no_turn=0;
   loop_ptr=&fn_null;
-  TRACE("STEPSpeed: "+60);
-  TRACE("STEPS: "+400);
+  TRACE2("STEPSpeed: ", 30);
+  TRACE2("STEPS: ", 400);
 }
 
 int irhandle_RUNMOTOR(unsigned long value)
@@ -106,12 +108,12 @@ int irhandle_RUNMOTOR(unsigned long value)
   switch(value)
   {
   case 0xFF22DD:
-    TRACE("PREV-backwards");
+    TRACE1("PREV-backwards");
     direction=-1;
     NewTone(TONEPin, 234, 100);
     break;
   case 0xFF02FD:
-    TRACE("NEXT-forward");
+    TRACE1("NEXT-forward");
     direction=+1;
     NewTone(TONEPin, 432, 100);
     break;
@@ -130,7 +132,7 @@ void terminate_RUNMOTOR()
 void program_RUNMOTOR()
 {
   stepper.step(400*direction);
-  TRACE(no_turn=no_turn+direction);
+  TRACE1(no_turn=no_turn+direction);
 }
 //end program
 
@@ -150,10 +152,10 @@ void setup_360_24timelapse()
   rev_360_24=REV_360_24/(86400/(DELAY/1000));
   shot_millis=0;
   shts_tkn=0;
-  TRACE("REV_360_24: " + REV_360_24);
-  TRACE("rev_360_24: " + rev_360_24);
-  TRACE("STEPSpeed: " + STEPSpeed);
-  TRACE("DELAY (s): " + (DELAY/1000));
+  TRACE2("REV_360_24: ", REV_360_24);
+  TRACE2("rev_360_24: ", rev_360_24);
+  TRACE2("STEPSpeed: ", STEPSpeed);
+  TRACE2("DELAY (s): ", (DELAY/1000));
 }
 
 void terminate_360_24timelapse()
@@ -169,8 +171,8 @@ void program_360_24timelapse()
   shot_millis=cur_millis;
  
   stepper.step(rev_360_24);
-  TRACE("shts_tkn: " + shts_tkn);
-  TRACE("stepper.step: " + rev_360_24*shts_tkn);
+  TRACE2("shts_tkn: ", shts_tkn);
+  TRACE2("stepper.step: ", rev_360_24*shts_tkn);
 }
 //end program
 
@@ -209,91 +211,91 @@ void translateIR(unsigned long value)
   switch(value)
   {
   case 0xFFA25D:
-    TRACE("CH-");
+    TRACE1("CH-");
     cur_program=SLEEP;
     break;
   case 0xFF629D:
-    TRACE("CH");
+    TRACE1("CH");
     cur_program=SLEEP;
     break;
   case 0xFFE21D:
-    TRACE("CH+");
+    TRACE1("CH+");
     cur_program=SLEEP;
     break;
   case 0xFF22DD:
-    TRACE("PREV");
+    TRACE1("PREV");
     cur_program=SLEEP;
     break;
   case 0xFF02FD:
-    TRACE("NEXT");
+    TRACE1("NEXT");
     cur_program=SLEEP;
     break;
   case 0xFFC23D:
-    TRACE("PLAY/PAUSE");
+    TRACE1("PLAY/PAUSE");
     cur_program=SLEEP;
     break;
   case 0xFFE01F:
-    TRACE("VOL-");
+    TRACE1("VOL-");
     cur_program=SLEEP;
     break;
   case 0xFFA857:
-    TRACE("VOL+");
+    TRACE1("VOL+");
     cur_program=SLEEP;
     break;
   case 0xFF906F:
-    TRACE("EQ");
+    TRACE1("EQ");
     cur_program=SLEEP;
     break;
   case 0xFF6897:
-    TRACE("0");
+    TRACE1("0");
     cur_program=SLEEP;
     break;
   case 0xFF9867:
-    TRACE("100+");
+    TRACE1("100+");
     cur_program=SLEEP;
     break;
   case 0xFFB04F:
-    TRACE("200+");
+    TRACE1("200+");
     cur_program=SLEEP;
     break;
   case 0xFF30CF:
-    TRACE("1-run motor");
+    TRACE1("1-run motor");
     cur_program=RUNMOTOR;
     break;
   case 0xFF18E7:
-    TRACE("2-360 24h time lapse");
+    TRACE1("2-360 24h time lapse");
     cur_program=TIMELAPSE360_24;
     break;
   case 0xFF7A85:
-    TRACE("3");
+    TRACE1("3");
     cur_program=SLEEP;
     break;
   case 0xFF10EF:
-    TRACE("4");
+    TRACE1("4");
     cur_program=SLEEP;
     break;
   case 0xFF38C7:
-    TRACE("5");
+    TRACE1("5");
     cur_program=SLEEP;
     break;
   case 0xFF5AA5:
-    TRACE("6");
+    TRACE1("6");
     cur_program=SLEEP;
     break;
   case 0xFF42BD:
-    TRACE("7");
+    TRACE1("7");
     cur_program=SLEEP;
     break;
   case 0xFF4AB5:
-    TRACE("8");
+    TRACE1("8");
     cur_program=SLEEP;
     break;
   case 0xFF52AD:
-    TRACE("9");
+    TRACE1("9");
     cur_program=SLEEP;
     break;
   default:
-    TRACE("other button");
+    TRACE1("other button");
     return; //remote sends other button randomly, need to ignore
   }
   NewTone(TONEPin, program.tone, 100);
@@ -341,7 +343,7 @@ void setup()
   }
   //ready to receive
   NewTone(TONEPin, 137, 100);
-  TRACE("nikon remote ready");
+  TRACE1("nikon remote ready");
 }
    
 void loop() 
