@@ -10,9 +10,9 @@ First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far
 
 Basic feature list:
 
- * Easy to write your own program for remote control buttons, C language knowledge needed
  * Can do time lapses as long you have battery, 70A will last for ~72h
  * 256GB SD card will be enough for 24h 4k video, picture taken every 3 seconds, 128GB for 1080p
+ * Easy to write your own program for remote control buttons, C language knowledge needed
  * Mediocre to setup
  * Expensive, as quality sadly is
  
@@ -57,7 +57,7 @@ Transport not included
 
 Witbox 2 comes without heat bed, which makes it 'cheaper,' you need to use masking tape otherwise wont stick.
 
-Use the *TEST.gcode* to validate everything fits
+Use the *TEST.gcode* to validate everything fits, and clean the gears from printing overhead
 
 #### No printer
 
