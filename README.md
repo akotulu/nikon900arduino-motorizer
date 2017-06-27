@@ -4,7 +4,7 @@
 
 [Youtube full preview](https://youtu.be/GD09Ut1_Xak)
 
-First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far and removed take photo every X seconds from mobile apps. Good buy, but not what the specs sheet promotes, it goes to see, even in best interest you are forced to Vatikan agenda by powers in control. Wake up!
+First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far and removed take photo every X seconds from mobile apps. Good buy, but not what the specs sheet promotes, it goes to see, even in best interest you are forced to Vatican agenda by powers in control. Wake up!
 
 [License CC0](https://creativecommons.org/share-your-work/public-domain/cc0/)
 
@@ -24,6 +24,7 @@ Components needed:
  * Nikon P900 - 600€
  * 256GB SD 95MB/sec card 200€
  * Arduino Nano 3.0 (ATMEGA328) - 27€
+ * [MPU-9150 GY-9150 Nine-axis Attitude Three-axis Electronic Compass Acceleration Gyroscope Module -14€](https://www.aliexpress.com/store/product/MPU-9150-GY-9150-Nine-axis-Attitude-Three-axis-Electronic-Compass-Acceleration-Gyroscope-Module/406986_32599547733.html)
  * [DIY 400 Points Solderless Bread Board Breadboard 400 PCB Test Board for ATMEGA PIC Arduino UNO Free Shipping - 2€](https://www.aliexpress.com/item/Hot-sale-DIY-400-Points-Solderless-Bread-Board-Breadboard-400-PCB-Test-Board-for-ATMEGA-PIC/32497913498.html?spm=2114.01010208.3.9.H7lMpV&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142-10050_10110_10120,searchweb201603_16,ppcSwitch_4&btsid=6038ed5d-c89e-49ed-a676-96c3d91b0276&algo_expid=b849f023-45eb-47e3-b084-601300382894-1&algo_pvid=b849f023-45eb-47e3-b084-601300382894)
  * [140pcs U Shape Solderless Breadboard Jumper Cable Wire Kit - 1,50€](https://www.aliexpress.com/item/140-pcs-U-Shape-Solderless-Breadboard-Jumper-Cable-Wire-Kit-For-Arduino-Shield-For-raspberry-pi/32581254395.html?spm=2114.01010208.3.1.kzhsar&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_10102_10096_5320015_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142,searchweb201603_16,ppcSwitch_4&btsid=e2bce3f4-7f6f-4537-b3a2-2adac506ea97&algo_expid=393f7e97-ddae-4037-88a8-b7b07635ab58-0&algo_pvid=393f7e97-ddae-4037-88a8-b7b07635ab58)
  * [5V Stepper Motor 28BYJ-48 With Drive Test Module Board ULN2003 5 Line 4 Phase - 2,50€](https://www.aliexpress.com/item/5V-Stepper-Motor-28BYJ-48-With-Drive-Test-Module-Board-ULN2003-5-Line-4-Phase/32615355685.html?spm=2114.01010208.3.9.H9UGn8&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_10102_10096_5320015_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142-10050_10119,searchweb201603_16,ppcSwitch_4&btsid=1832fb9b-ace3-448e-bee1-acfbbbfbc4b7&algo_expid=61c79ad0-cbcd-486a-a923-640d11ed8b1a-1&algo_pvid=61c79ad0-cbcd-486a-a923-640d11ed8b1a)
@@ -31,7 +32,7 @@ Components needed:
  * [LED5 IR 940nm 20deg 12mW/sr - 2,50€](https://www.aliexpress.com/item/F273-10pcs-LED-5mm-940nm-IR-Infrared-Emitting-Round-Tube-Light-diode/32660619353.html?spm=2114.01010208.3.81.y3SZVO&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260013_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=37d23504-3a1d-49b1-aecb-c0a7f1bcb1d7&algo_expid=f3c0ecc6-2a9d-4f27-a86b-1860be15d583-13&algo_pvid=f3c0ecc6-2a9d-4f27-a86b-1860be15d583)
  * [Piezo Piezoelectric Buzzer Alarm Speaker - 1€](https://www.aliexpress.com/item/3pcs-BCE-12606-Passive-12-Piezo-Piezoelectric-Buzzer-Alarm-Speaker-80dB-4KHz-3mA-12-5mm-6/32813510131.html?spm=2114.01010208.3.9.GaI4Y8&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=de9e1d4e-f54f-44fe-9853-e4fe23b87d75&algo_expid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6-1&algo_pvid=8c7101e2-9865-47cf-bb4e-0fbf91cd96d6)
  * [Dupont line 40pcs 20cm male to female jumper wire - 1€](https://www.aliexpress.com/item/Free-shipping-Dupont-line-40pcs-20cm-male-to-female-jumper-wire-Dupont-cable-breadboard-cable-jump/32800430829.html?spm=2114.01010208.3.32.TgT93X&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_10073_5260012_10123_10120_10189_142-10120,searchweb201603_16,ppcSwitch_4&btsid=f60ec63e-d421-4b9c-afca-ec7ee0a9d68a&algo_expid=078bcb28-5ef0-4704-bd9a-26d630a018f6-4&algo_pvid=078bcb28-5ef0-4704-bd9a-26d630a018f6)
- * 6x M2 DIN 912 12.9 ST Socket Cap Screws
+ * 8x M2 DIN 912 12.9 ST Socket Cap Screws
  * 4x M3 DIN 433 ZN Flat Washer
  * [2x USB 2.0 Extension Cable A Male - A Female Round 2.00 m Black - 10€](https://www.aliexpress.com/item/Ugreen-Super-High-Speed-M-F-Male-To-Female-USB-3-0-Extension-Extender-Cable-Data/32415077335.html?spm=2114.01010208.3.3.iYSkbt&ws_ab_test=searchweb0_0,searchweb201602_5_10152_10065_10151_10068_10136_10137_10303_10060_10302_10155_10062_437_10154_10056_10055_10054_10059_303_100031_10099_10103_5320014_10102_10096_10052_10053_10142_10107_10050_10051_10170_10084_10083_10119_10080_10082_10081_10110_519_10111_10112_10113_10114_10182_10078_10079_5260014_10073_10123_10120_10189_142,searchweb201603_16,ppcSwitch_4&btsid=f40c2d2d-4858-4f43-b53f-5ed442dd9400&algo_expid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4-0&algo_pvid=96f5c9da-ccba-4463-af5b-bb9a8aaf0ad4)
  * Unused Male USB cable to make your own power plug
@@ -39,10 +40,10 @@ Components needed:
  * 70A car battery - 100€
 
 Most parts can be bought @ https://www.aliexpress.com, list items are links to parts
-* 1 247,50 € without camera
-* 647,50 € with camera
-* 447,50 € with camera and SD card
-* 167,50 € with camera, SD card and tripid (you need to remodel and change code)
+* 1 261,50 € without camera
+* 661,50 € with camera
+* 461,50 € with camera and SD card
+* 181,50 € with camera, SD card and tripod (you need to remodel and change code)
 
 Transport not included
 
@@ -55,7 +56,7 @@ Transport not included
 * ESUN 3D Printer Filament Black 1.75mm PLA 1KG Roll
 * Tesa® 4329 Yellow Masking Tape 50mm x 50m
 
-Witbox 2 comes without heat bed, which makes it 'cheaper,' you need to use masking tape otherwise wont stick.
+Witbox 2 comes without heat bed, which makes it 'cheaper,' you need to use masking tape otherwise won’t stick
 
 Use the *TEST.gcode* to validate everything fits
 
@@ -65,16 +66,35 @@ There are companies who 3D print your STL files
 
 ### Programs
 
-* Rhinoceors - 3D model
+* Rhinoceros - 3D model
 * 123Desing - Convert svg to stl
 * Photoshop - Magic Wand tool
+* Arduino IDE - the tool
 
-### Pitfails
+### Pitfalls
 
 * Motor is weak when speed is increased
 * Clean the gears from printing overhead with sandpaper
 * Use extra washers to level motor
-* Transfer gear has 1mm cap, use cardboard to make a spring
+* Transfer gear has 1mm cap, cut cardboard circle to make a washer if needed
+* I prefer smooth rotation, but motor may get stuck. Change the program to rotate motor less frequently with higher revolutions
+* Sketch uses 28782 bytes (93%) of program storage space. Maximum is 30720 bytes
+* Global variables use 1426 bytes (69%) of dynamic memory, leaving 622 bytes for local variables. Maximum is 2048 bytes
+* If everything fails, model second motor on other side
+* Test before going hunting, it is homemade and may not work first time
+
+## Prerequisites
+
+* Soldering iron
+* Sanding paper
+* Micro USB male to USB male cable for Arduino Nano
+
+## Install
+
+1. Unzip arduino-libs.zip, arduino-KingTideMPU9150.zip to ./Documents/Arduino/libraries on Mac, ..\<you>\Documents\Arduino on Win
+2. Calibrate MPU sensor with project found in sensor calibration folder
+3. If new to Rhinoceros then docs folder may help you
+4. Assemble, included few images in img folder
 
 ## Commands
 
@@ -83,12 +103,13 @@ Button | Command
 1+NEXT | Motor forwards
 1+PREV | Motor backwards
 2 | 24h time lapse
+3+N.+N | Take picture every N seconds
 X | Cancel
 
 ## Final 
 
 01. Water is flat on every level
-02. Moon meteor craters are circular 90 degree angel impact holes
+02. Moon meteor craters are circular 90-degree angle impact holes
 03. Polaris is fixed star
 04. Stars are magnetic rings, 'Nikon P900 stars'
 05. Setting sun shrinks and distances itself from viewer
@@ -106,7 +127,7 @@ X | Cancel
 17. Your soul is eternal, memories erased with vaccines
 18. You ARE a slave to the monetary system which is privately owned medium
 19. Schools are prisons to force false lies upon you
-20. Every government is controlled by Rothchild dynasty (money) and Vatican Jesuit Pope (agenda)
+20. Every government is controlled by Rothschild dynasty (money) and Vatican Jesuit Pope (agenda)
 21. Domes ecosystem has been damaged, majority of trees have been cut down
 22. There are hidden ancient places: Puma Punku, Kailasa Temple, Lake Titicaca, Rock Gate, Baalbek Lebanon
 23. There are people you never heard of: Edward LeedsKalnin, Viktor Schauberger, Richard E Bird, Eric Laithwaite, Bernhard Schmidt, Dmitri Maksutov, Giordano Bruno, Leonardo da Vinci, 
