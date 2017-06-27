@@ -275,7 +275,7 @@ class TimeLapse24h360: public Program {
     stepper.setSpeed(STEPSpeed);
   
     correction_heading = heading;
-    shts_per_rotation = 45200 / DELAYSEC;
+    shts_per_rotation = 86400/DELAYSEC;
     laps_traveled = 0;
     shot_millis=0;
     shts_tkn=0;

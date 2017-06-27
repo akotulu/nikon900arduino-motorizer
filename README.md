@@ -91,7 +91,7 @@ There are companies who 3D print your STL files
 
 ## Install
 
-1. Unzip arduino-libs.zip, arduino-KingTideMPU9150.zip to ./Documents/Arduino/libraries on Mac, ..\<you>\Documents\Arduino on Win
+1. Unzip arduino-libs.zip to ./Documents/Arduino/libraries on Mac, ..\<you>\Documents\Arduino on Win
 2. Calibrate MPU sensor with project found in sensor calibration folder
 3. If new to Rhinoceros then docs folder may help you
 4. Assemble, included few images in img folder
