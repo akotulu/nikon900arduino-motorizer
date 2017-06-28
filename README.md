@@ -71,10 +71,12 @@ There are companies who 3D print your STL files
 * Photoshop - Magic Wand tool
 * Arduino IDE - the tool
 
+If new to Rhinoceros then docs folder may help you
+
 ### Pitfalls
 
 * Motor is weak when speed is increased
-* Clean the gears from printing overhead with sandpaper
+* Clean the gears from printing overhead using sandpaper
 * Use extra washers to level motor
 * Transfer gear has 1mm cap, cut cardboard circle to make a washer if needed
 * I prefer smooth rotation, but motor may get stuck. Change the program to rotate motor less frequently with higher revolutions
@@ -93,14 +95,13 @@ There are companies who 3D print your STL files
 
 1. Unzip arduino-libs.zip to ./Documents/Arduino/libraries on Mac, ..\<you>\Documents\Arduino on Win
 2. Calibrate MPU sensor with project found in sensor calibration folder
-3. If new to Rhinoceros then docs folder may help you
-4. Assemble, included few images in img folder
+3. Assemble, included few images in img folder
 
 ## Logging
 
 Arduino IDE logging serial crashes after a while, use *log.pl*; don't forget to change parameters before use
 
-On mac you may need to install module
+On mac you may need to install module, requires Apple Developer Tools (XCode)
 ```
 sudo perl -MCPAN -e 'install Device::SerialPort'
 ```
