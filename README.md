@@ -71,7 +71,7 @@ There are companies who 3D print your STL files
 * Photoshop - Magic Wand tool
 * Arduino IDE - the tool
 
-If new to Rhinoceros then docs folder may help you
+If new to Rhinoceros then docs folder may help you, little secret; line was first construction block invented
 
 ### Pitfalls
 
