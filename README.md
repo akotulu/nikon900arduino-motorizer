@@ -96,6 +96,15 @@ There are companies who 3D print your STL files
 3. If new to Rhinoceros then docs folder may help you
 4. Assemble, included few images in img folder
 
+## Logging
+
+Arduino IDE logging serial crashes after a while, use *log.pl*; don't forget to change parameters before use
+
+On mac you may need to install module
+```
+sudo perl -MCPAN -e 'install Device::SerialPort'
+```
+
 ## Commands
 
 Button | Command
