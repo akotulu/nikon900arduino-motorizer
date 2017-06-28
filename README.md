@@ -15,7 +15,6 @@ Basic feature list:
  * Easy to write your own program for remote control buttons, C language knowledge needed
  * Mediocre to setup
  * Expensive, as quality sadly is
- 
 
 Components needed:
 
@@ -70,6 +69,7 @@ There are companies who 3D print your STL files
 * 123Desing - Convert svg to stl
 * Photoshop - Magic Wand tool
 * Arduino IDE - the tool
+* Perl (optional)
 
 If new to Rhinoceros then docs folder may help you, little secret; line was first construction block invented
 
@@ -97,13 +97,23 @@ If new to Rhinoceros then docs folder may help you, little secret; line was firs
 2. Calibrate MPU sensor with project found in sensor calibration folder
 3. Assemble, included few images in img folder
 
+Nikon P900 scroll wheel has buttons every 4 directions, pressing left opens menu for remote control
+
 ## Logging
 
-Arduino IDE logging serial crashes after a while, use *log.pl*; don't forget to change parameters before use
+Arduino IDE logging serial crashes after few hours, use *log.pl*; don't forget to change parameters before use
 
 On mac you may need to install module, requires Apple Developer Tools (XCode)
 ```
 sudo perl -MCPAN -e 'install Device::SerialPort'
+```
+
+[More info](http://www.cpan.org/modules/INSTALL.html)
+
+Command line
+```
+cd /projectDir
+perl nikon.pl
 ```
 
 ## Commands
