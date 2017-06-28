@@ -78,7 +78,7 @@ There are companies who 3D print your STL files
 * Use extra washers to level motor
 * Transfer gear has 1mm cap, cut cardboard circle to make a washer if needed
 * I prefer smooth rotation, but motor may get stuck. Change the program to rotate motor less frequently with higher revolutions
-* Sketch uses 28782 bytes (93%) of program storage space. Maximum is 30720 bytes
+* Sketch uses 28888 bytes (94%) of program storage space. Maximum is 30720 bytes.
 * Global variables use 1426 bytes (69%) of dynamic memory, leaving 622 bytes for local variables. Maximum is 2048 bytes
 * If everything fails, model second motor on other side
 * Test before going hunting, it is homemade and may not work first time

@@ -91,9 +91,9 @@ int seq_l;
 //oscd is a delay in microsecond used at each oscillation.
 int oscd;
    
-void oscillate(int pin, unsigned long n, byte shine) 
+void oscillate(int pin, unsigned long n, char shine) 
 {
-  byte ir_status=0;
+  char ir_status=0;
   while(n>0){
     n--;
     delayMicroseconds(oscd);
@@ -102,7 +102,7 @@ void oscillate(int pin, unsigned long n, byte shine)
   }
 }
    
-void snap() 
+void snap()
 {
   int i;
   for (i=0; i<seq_l; i++){
@@ -137,7 +137,7 @@ class Idle: public Program {
 #define RunMotorSpeed 60
 #define RunMotorSteps 400
 class RunMotor: public Program {
-  byte direction = 0;
+  char direction = 0;
 
   unsigned long tick;
   unsigned long turn_millis;
@@ -191,7 +191,7 @@ class RunMotor: public Program {
 
 class TakePicture: public Program {
   unsigned long shot_millis = 0;
-  unsigned int delay_millis = 0;
+  unsigned long delay_millis = 0;
   
  public:
   TakePicture(): Program(666) {}
