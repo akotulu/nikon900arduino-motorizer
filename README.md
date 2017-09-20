@@ -3,6 +3,7 @@
 ![Project Image](https://github.com/akotulu/nikon900arduino-motorizer/blob/master/Schematic.png)
 
 [Youtube full preview](https://youtu.be/GD09Ut1_Xak)
+
 [Unedited 30 hours and 28 minutes time lapse](https://www.youtube.com/watch?v=Zd_muTaCcmw&list=PLNt92VLjuptCgJ82W1scPigNR6E39SmxJ&t=3s&index=1)
 
 First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far and removed take photo every X seconds from mobile apps. Good buy, but not what the specs sheet promotes, it goes to see, even in best interest you are forced to Vatican agenda by powers in control. Wake up!
@@ -93,7 +94,7 @@ If new to Rhinoceros then docs folder may help you, little secret; line was firs
 
 * Soldering iron
 * Sanding paper
-* Micro USB male to USB male cable for Arduino Nano
+* Mini USB male to USB male cable for Arduino Nano
 
 ## Install
 
