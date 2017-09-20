@@ -3,6 +3,7 @@
 ![Project Image](https://github.com/akotulu/nikon900arduino-motorizer/blob/master/Schematic.png)
 
 [Youtube full preview](https://youtu.be/GD09Ut1_Xak)
+[Unedited 30 hours and 28 minutes time lapse](https://www.youtube.com/watch?v=Zd_muTaCcmw&list=PLNt92VLjuptCgJ82W1scPigNR6E39SmxJ&t=3s&index=1)
 
 First Nikons where OK, but the new **firmware** is modified, doesn't zoom so far and removed take photo every X seconds from mobile apps. Good buy, but not what the specs sheet promotes, it goes to see, even in best interest you are forced to Vatican agenda by powers in control. Wake up!
 
@@ -46,7 +47,7 @@ Most parts can be bought @ https://www.aliexpress.com, list items are links to p
 
 Transport not included
 
-*PS: Arduino Nano comes with USB Nano plug, some idiot in Arduino department changed it, used to be micro*
+*PS: Arduino Nano comes with USB Mini plug, some idiot in Arduino department changed it, used to be micro*
 
 ### Printer
 
@@ -84,6 +85,9 @@ If new to Rhinoceros then docs folder may help you, little secret; line was firs
 * Global variables use 1426 bytes (69%) of dynamic memory, leaving 622 bytes for local variables. Maximum is 2048 bytes
 * If everything fails, model second motor on other side
 * Test before going hunting, it is homemade and may not work first time
+* Laws of humidity will fog out the lens, solution is to use an old sock and [One Pair 5V USB Heating Element Film Heater 6*20CM for Warm Feet Warmer Electric](https://www.aliexpress.com/item/One-Pair-5V-USB-Heating-Element-Film-Heater-6-20CM-for-Warm-Feet-Warmer-Electric/32726355471.html?spm=a2g0s.9042311.0.0.TGILuU)
+* This device does not work in high altitudes, plain flies through magnetic vortex and IR emitters can't produce waves that can be received
+* You may need to change 24h program to get it rotating at right speeds
 
 ## Prerequisites
 
@@ -134,7 +138,7 @@ X | Cancel
 04. Stars are magnetic rings, 'Nikon P900 stars'
 05. Setting sun shrinks and distances itself from viewer
 06. Boats disappear behind the horizon just to be seen again using binoculars
-07. Moon light temperature is few degrees colder in the shade
+07. Moonlight temperature is few degrees colder than in the shade
 08. Water spins direction it was poured in, still water conforms to nearest path
 09. Project White Alice used firmament above to bounce radio waves
 10. All satellite dishes are pointing to nearest tower
@@ -147,10 +151,10 @@ X | Cancel
 17. Your soul is eternal, memories erased with vaccines
 18. You ARE a slave to the monetary system which is privately owned medium
 19. Schools are prisons to force false lies upon you
-20. Every government is controlled by Rothschild dynasty (money) and Vatican Jesuit Pope (agenda)
+20. Every government is controlled by Rothchild dynasty (money) and Vatican Zionist Pope (agenda)
 21. Domes ecosystem has been damaged, majority of trees have been cut down
 22. There are hidden ancient places: Puma Punku, Kailasa Temple, Lake Titicaca, Rock Gate, Baalbek Lebanon
-23. There are people you never heard of: Edward LeedsKalnin, Viktor Schauberger, Richard E Bird, Eric Laithwaite, Bernhard Schmidt, Dmitri Maksutov, Giordano Bruno, Leonardo da Vinci, 
+23. There are people you never heard of: Edward LeedsKalnin, Auguste Piccard, Viktor Schauberger, Richard E Bird, Eric Laithwaite, Bernhard Schmidt, Dmitri Maksutov, Giordano Bruno, Leonardo da Vinci, Gerardus Mercator
 23. There are movies you never heard of: Nude on the Moon (1961),The Wild Women of Wongo (1958),Kings of the Sun (1963),Atlantis: The Lost Continent (1961),Ulysses (1954),The Ten Commandments (1956),Solomon and Sheba (1959),Sins of Jezebel (1953),Slaves of Babylon (1953),King of Kings (1961),The Robe (1953), The Vikings (1958), Demetrius and the Gladiators (1954), Seven Samurai (1954),The Magnificent Seven (1960),Return of the Magnificent Seven (1966), Invitation to a Gunfighter (1964),Taras Bulba (1962), 1776 (1972),Robinson Crusoe (1954),The Magnetic Monster (1953)
 24. ALL mainstream media outlets are heavily censored and controller by powers in control
 25. Hemp cures every illness mind can think of
